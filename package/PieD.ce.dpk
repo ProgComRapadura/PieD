@@ -25,10 +25,29 @@ package PieD.ce;
 {$IMAGEBASE $400000}
 {$DEFINE DEBUG}
 {$ENDIF IMPLICITBUILDING}
+{$DESCRIPTION 'PieD - A cool Frankenstein framework '}
 {$RUNONLY}
 {$IMPLICITBUILD ON}
 
 requires
   rtl;
+
+contains
+  pie.core.rtti.utils in '..\src\pie.core.rtti.utils.pas',
+  pie.core.types.interceptor.vmi.types in '..\src\pie.core.types.interceptor.vmi.types.pas',
+  pie.core.types in '..\src\pie.core.types.pas',
+  pie.core.zip.utils in '..\src\pie.core.zip.utils.pas',
+  pie.ctx.container.injectable in '..\src\pie.ctx.container.injectable.pas',
+  pie.ctx.container in '..\src\pie.ctx.container.pas',
+  pie.ctx.core in '..\src\pie.ctx.core.pas',
+  pie.ctx.registration in '..\src\pie.ctx.registration.pas',
+  pie.hack.hook in '..\src\pie.hack.hook.pas',
+  pie.hack.hook.types in '..\src\pie.hack.hook.types.pas',
+  pie.interceptors.core in '..\src\pie.interceptors.core.pas',
+  pie.interceptors.vmi.lifecontrol.factory in '..\src\pie.interceptors.vmi.lifecontrol.factory.pas',
+  pie.interceptors.vmi.lifecontrol in '..\src\pie.interceptors.vmi.lifecontrol.pas',
+  pie.interceptors.vmi in '..\src\pie.interceptors.vmi.pas',
+  pie.logger in '..\src\pie.logger.pas',
+  pie.logger.safe.threadUtils in '..\src\pie.logger.safe.threadUtils.pas';
 
 end.
